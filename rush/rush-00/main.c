@@ -3,23 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edalves- <edalves-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edalves- <edalves-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 10:31:38 by edalves-          #+#    #+#             */
-/*   Updated: 2025/03/15 10:32:51 by edalves-         ###   ########.fr       */
+/*   Updated: 2025/03/15 17:22:30 by bde-sa-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rush00.c"
+void	rush(int largura, int altura);
 
-/*
-Declaração da função rush
-*/
-
-void rush(int largura, int altura);
-
-int main(void)
+int	main(void)
 {
-    rush(5, 3); 
-    return 0;
+	rush(5, 5);
+	return (0);
 }
