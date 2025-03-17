@@ -3,37 +3,48 @@
 /*                                                        :::      ::::::::   */
 /*   rush00.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edalves- <edalves-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: edalves- <edalves-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 10:31:38 by edalves-          #+#    #+#             */
-/*   Updated: 2025/03/15 19:11:03 by csilva-s         ###   ########.fr       */
+/*   Updated: 2025/03/16 15:11:23 by edalves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void	rush(int largura, int altura)
+void	function(int i, int j, int y, int x);
+
+void	rush(int x, int y)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
-	i = 0;
-	j = 0;
-	while (i < altura)
+	if (x < 1 || y < 1)
 	{
-		while (j < largura)
+		return ;
+	}
+	i = 0;
+	while (i < y)
+	{
+		j = 0;
+		while (j < x)
 		{
-			if ((i == 0 || i == altura - 1) && (j == 0 || j == largura - 1))
-				ft_putchar('o');
-			else if (i == 0 || i == altura - 1)
-				ft_putchar('-');
-			else if (j == 0 || j == largura - 1)
-				ft_putchar('|');
-			else
-				ft_putchar(' ');
+			function(i, j, y, x);
 			j++;
 		}
 		ft_putchar('\n');
 		i++;
 	}
+}
+
+void	function(int i, int j, int y, int x)
+{
+	if ((i == 0 || i == y - 1) && (j == 0 || j == x - 1))
+		ft_putchar('o');
+	else if (j == 0 || j == x - 1)
+		ft_putchar('|');
+	else if (i == 0 || i == y - 1)
+		ft_putchar('-');
+	else
+		ft_putchar(' ');
 }

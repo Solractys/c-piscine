@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edalves- <edalves-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: edalves- <edalves-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/15 10:31:38 by edalves-          #+#    #+#             */
-/*   Updated: 2025/03/15 17:22:30 by bde-sa-r         ###   ########.fr       */
+/*   Created: 2025/03/15 09:56:51 by edalves-          #+#    #+#             */
+/*   Updated: 2025/03/16 11:07:22 by csilva-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int largura, int altura);
+#include <unistd.h>
 
-int	main(void)
+void	ft_putchar(char c)
 {
-	rush(5, 5);
-	return (0);
+	write(1, &c, 1);
 }

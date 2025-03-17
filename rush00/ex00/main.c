@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edalves- <edalves-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: edalves- <edalves-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 10:31:38 by edalves-          #+#    #+#             */
-/*   Updated: 2025/03/15 17:22:30 by bde-sa-r         ###   ########.fr       */
+/*   Updated: 2025/03/16 15:06:42 by edalves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int largura, int altura);
+void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(5, 5);
+	rush(-2, 5);
 	return (0);
 }
+
+//
